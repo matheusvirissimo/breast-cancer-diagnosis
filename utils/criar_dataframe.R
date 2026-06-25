@@ -42,6 +42,12 @@ wdbc_df <- read.csv(
   stringsAsFactors = FALSE
 )
 
+write.csv(
+  wdbc_df,
+  "database/brest-cancer.csv",
+  row.names = FALSE
+)
+
 is.data.frame(wdbc_df)
 head(wdbc_df)
 str(wdbc_df)
